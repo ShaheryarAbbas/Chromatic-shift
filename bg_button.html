@@ -1,0 +1,14 @@
+<button onclick="changeBackground()">Change Background</button>
+
+<script>
+function changeBackground() {
+  // generate a random color using RGB values
+  var r = Math.floor(Math.random() * 256);
+  var g = Math.floor(Math.random() * 256);
+  var b = Math.floor(Math.random() * 256);
+  var color = "rgb(" + r + "," + g + "," + b + ")";
+  
+  // set the background color of the page to the generated color
+  document.body.style.backgroundColor = color;
+}
+</script>
